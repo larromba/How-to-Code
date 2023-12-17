@@ -33,7 +33,7 @@ Regardless of whether the code was compiled or interpreted, the final result is 
 In essence, the conversion of code to 0s and 1s is an intermediary step in the process of getting a computer to understand and execute the instructions provided by the programmer. This binary representation is the language that computers "speak" and can directly act upon.
 
 ### What are these 0s and 1s?
-In computers, `0s and 1s are binary digits, often referred to as "bits." The binary system is the fundamental language of computers, and it uses a base-2 numeral system. In this system, each digit, or bit, can have one of two values: 0 or 1.
+In computers, 0s and 1s are binary digits, often referred to as "bits." The binary system is the fundamental language of computers, and it uses a base-2 numeral system. In this system, each digit, or bit, can have one of two values: 0 or 1.
 
 Here's a brief explanation of how binary digits work in computing:
 
