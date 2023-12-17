@@ -95,6 +95,7 @@ These methods required a high level of precision and knowledge of the computer's
 
 ### Further reading
 [From electricity to bits](https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:computers/xcae6f4a7ff015e7d:from-electricity-to-bits/a/from-electricity-to-bits)
+
 [What is a computer?](https://www.explainthatstuff.com/howcomputerswork.html)
 
 ## History of computing
@@ -134,6 +135,7 @@ The history of computing is characterised by continuous innovation, from early m
 
 ### Further reading
 [A brief history of computers](https://www.explainthatstuff.com/historyofcomputers.html)
+
 [History of computers: A brief timeline](https://www.livescience.com/20718-computer-history.html)
 
 ## Fundamentals of programming
