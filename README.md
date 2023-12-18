@@ -211,8 +211,7 @@ Recursion is often used for iteration instead of traditional loop constructs.
 ##### Examples:
 Examples of functional programming languages include Haskell, Lisp, and functional features in languages like JavaScript and Python.
 
-```
-javascript
+```javascript
 // Example: Functional Programming in JavaScript
 
 // Function to calculate the square of a number
@@ -249,8 +248,7 @@ Iteration is often done using loop constructs (e.g., for, while) for repetitive 
 ##### Examples:
 Examples of procedural programming languages include C, Pascal, and early versions of Fortran.
 
-```
-python
+```python
 # Example: Procedural Programming in Python
 
 # Function to calculate the square of a number
