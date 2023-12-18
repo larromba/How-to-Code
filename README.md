@@ -1,7 +1,7 @@
 # How to Code
 The following is based on a conversation with ChatGPT, so the information may not be totally accurate.
 
-## The Link: Code, Computer & Output
+## The Missing Link: Code, Computer & Output
 It might help to first understand at a high level the link between the code, the computer and the output.
 
 ### What is programming?
@@ -14,9 +14,11 @@ A computer is an electronic device that processes and stores data to perform tas
 
 At its core, a computer has a central processing unit (CPU) that acts as the brain, carrying out instructions and calculations. It also has memory to store information temporarily, and storage for keeping data more permanently. Computers can connect to the internet, allowing them to access a vast amount of information and communicate with other computers.
 
+At its most fundamental level, computers operate using binary code, which consists of sequences of 0s and 1s. This binary system is the foundation of digital computing and is used to represent and manipulate data in the form of bits (binary digits). Each binary digit, or bit, can represent one of two values: 0 or 1.
+
 In simple terms, a computer is a versatile tool that people use for tasks like writing documents, sending emails, playing games, watching videos, and much more. It can be programmed to do a wide variety of jobs, making it an essential part of our daily lives.
 
-### How does a programming language turn into 0s and 1s? 
+### How does a programming language become 0s and 1s? 
 The process of turning code into 0s and 1s involves a compilation or interpretation step, depending on the programming language. Let me break it down:
 
 #### Writing Code:
@@ -58,7 +60,7 @@ For example, the binary number `1101` represents:
 
 Understanding binary is fundamental to understanding how computers store, process, and transmit information. While it may seem complex, various programming languages, assemblers, and higher-level abstractions shield most programmers from having to work directly with individual bits and bytes.
 
-### If text editors and IDEs are like programs that make programs, how did the very first ones get developed?
+### If text editors and IDEs are like programs that make programs, how were the very first ones developed?
 The development of assembly language and early tools was driven by the need for a more human-readable and manageable way to program computers. Here's an overview of how assembly language and early tools were developed:
 
 #### Machine Code:
@@ -70,7 +72,7 @@ As computers became more complex, there was a need for a more readable and mnemo
 #### Assemblers:
 Assemblers were developed to automate the translation of assembly language code into machine code. These programs took human-readable assembly code and converted it into the corresponding binary instructions that the computer could execute. Assemblers made programming more accessible by allowing programmers to work with symbolic instructions rather than raw binary.
 
-### Prior to IDEs, how did people enter the information into a computer?
+### Prior to IDEs, how did people enter code into a computer?
 Before the development of assemblers, programmers had to input machine code directly into computers using methods that involved low-level interactions. Here are some of the early methods used:
 
 #### Punch Cards:
@@ -140,7 +142,7 @@ The history of computing is characterised by continuous innovation, from early m
 
 ## Fundamentals of programming
 
-### What is the difference between compiled and interpreted languages?
+### What are the differences between compiled and interpreted languages?
 Compiled languages and interpreted languages are two different approaches to executing code. Here are the key differences between them:
 
 #### Compiled Languages:
@@ -177,16 +179,16 @@ Some languages, like Java and C#, use a hybrid approach. They are compiled into 
 #### Advantages and Disadvantages:
 
 ##### Compiled Languages:
-Advantages: Faster execution, optimised for specific hardware.
-Disadvantages: Longer build times, platform-dependent executables.
+- Advantages: Faster execution, optimised for specific hardware.
+- Disadvantages: Longer build times, platform-dependent executables.
 
 ##### Interpreted Languages:
-Advantages: Easier to debug, platform-independent code, shorter development cycles.
-Disadvantages: Slower execution, dependencies on interpreters.
+- Advantages: Platform-independent code, shorter development cycles.
+- Disadvantages: Slower execution, dependencies on interpreters.
 
 In summary, the main distinction lies in when the translation from source code to machine code occurs. Compiled languages perform this translation before the program runs, while interpreted languages do it at runtime. Each approach has its strengths and weaknesses, and the choice between them often depends on factors like performance requirements, development speed, and platform independence.
 
-### What is the difference between functional and procedural programming?
+### What are the differences between functional and procedural programming?
 Functional programming and procedural programming are two different programming paradigms, each with its own set of principles and approaches. Here are the key differences between them:
 
 #### Functional Programming:
@@ -209,6 +211,24 @@ Recursion is often used for iteration instead of traditional loop constructs.
 ##### Examples:
 Examples of functional programming languages include Haskell, Lisp, and functional features in languages like JavaScript and Python.
 
+```
+javascript
+// Example: Functional Programming in JavaScript
+
+// Function to calculate the square of a number
+const square = (x) => x * x;
+
+// Function to calculate the sum of squares for an array of numbers
+const sumOfSquares = (numbers) => numbers.map(square).reduce((acc, val) => acc + val, 0);
+
+// Sample array of numbers
+const numbers = [1, 2, 3, 4, 5];
+
+// Calculate and print the sum of squares
+const result = sumOfSquares(numbers);
+console.log("Sum of Squares:", result);
+```
+
 #### Procedural Programming:
 
 ##### Focus on Procedures (Functions):
@@ -229,13 +249,36 @@ Iteration is often done using loop constructs (e.g., for, while) for repetitive 
 ##### Examples:
 Examples of procedural programming languages include C, Pascal, and early versions of Fortran.
 
+```
+python
+# Example: Procedural Programming in Python
+
+# Function to calculate the square of a number
+def square(x):
+    return x * x
+
+# Function to calculate the sum of squares for a list of numbers
+def sum_of_squares(numbers):
+    total = 0
+    for num in numbers:
+        total += square(num)
+    return total
+
+# Sample list of numbers
+numbers = [1, 2, 3, 4, 5]
+
+# Calculate and print the sum of squares
+result = sum_of_squares(numbers)
+print("Sum of Squares:", result)
+```
+
 #### Hybrid Approaches:
 Many languages support both functional and procedural programming paradigms, allowing developers to choose the style that best fits the problem at hand. For example, Python supports both procedural and functional programming features.
 
 #### Choosing Between Them:
 The choice between functional and procedural programming often depends on the nature of the problem, the team's expertise, and the desired characteristics of the code (e.g., readability, maintainability, performance). Some developers even use a mix of both paradigms in their code, leveraging the strengths of each when appropriate.
 
-### What are data types in programming?
+### What are data types?
 In programming, a data type is a classification that specifies which type of value a variable can hold or what type of data a function can return. Data types are essential for defining the nature of the data that a program manipulates. They help determine the operations that can be performed on the data and the storage requirements for that data. Common data types include:
 
 #### Integer:
@@ -285,7 +328,7 @@ Represents a memory address, often used for referencing other variables or objec
 
 The specific data types available and their characteristics may vary between programming languages. Understanding data types is crucial for writing efficient and error-free code, as it ensures that variables are used appropriately and operations are performed consistently.
 
-### What is the heap and the stack?
+### What is the stack and the heap?
 The heap and the stack are two regions of a computer's memory that serve different purposes in the execution of a program. They are used for storing different types of data and have distinct characteristics:
 
 #### Stack:
@@ -546,7 +589,7 @@ The final output of the compilation process is an executable file that can be ru
 
 Compilation is a crucial step in the software development process, allowing programmers to write code in a high-level language and then execute it on various hardware platforms. It helps improve code efficiency, ensures correctness, and enables the creation of software that can be distributed and run on different systems.
 
-### What is a good language to learn programming fundamentals?
+### What are some good languages to learn programming fundamentals?
 Choosing a programming language to learn programming fundamentals depends on several factors, including your goals, interests, and the applications you are interested in developing. However, some languages are particularly well-suited for beginners due to their simplicity, readability, and widespread use in educational contexts. Here are a few recommendations:
 
 #### Python:
@@ -611,9 +654,9 @@ Ensuring that the back-end infrastructure can handle scalability and accommodate
 Some developers work on both front-end and back-end aspects, and they are referred to as full-stack developers. Full-stack developers have a broad skill set and can contribute to both client-side and server-side development.
 
 #### Summary:
-Front-end development is concerned with the user interface, client-side rendering, and user experience.
-Back-end development handles server-side logic, data processing, and communication with databases.
-Collaboration between front-end and back-end developers is essential for building fully functional and cohesive software applications.
+- Front-end development is concerned with the user interface, client-side rendering, and user experience.
+- Back-end development handles server-side logic, data processing, and communication with databases.
+- Collaboration between front-end and back-end developers is essential for building fully functional and cohesive software applications.
 
 In web development, front-end and back-end components work together to create a seamless user experience, with each aspect playing a critical role in the overall functionality of the application.
 
@@ -855,7 +898,7 @@ Consider Expenses: Factor in your time, expenses, and the value you provide when
 Create Profiles: Sign up on freelancing platforms like Upwork, Freelancer, Fiverr, or others relevant to your field.
 Optimize Profiles: Write a compelling bio, showcase your skills, and upload a professional profile picture.
 
-_(in addition to this, it's also a good idea to search LinkedIn for recruiters)_
+_(In addition to this, it's also a good idea to search LinkedIn for recruiters)_
 
 #### 6. Network and Market Yourself:
 Online Presence: Leverage social media, forums, and professional networks to promote your services.
@@ -889,6 +932,6 @@ Handle Issues Professionally: Address any issues or concerns professionally to m
 Delegate Tasks: As your business grows, consider delegating non-core tasks to focus on high-value work.
 Raise Rates: Periodically review and adjust your rates based on your experience and the value you provide.
 
-_(depending on your country, you might be required to start a company in order to freelance)_
+_(Depending on your country, you might be required to start a company in order to freelance)_
 
 Remember, building a successful freelance career takes time and effort. Consistency, professionalism, and a commitment to delivering quality work will contribute to your success as a freelancer.
