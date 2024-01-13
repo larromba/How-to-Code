@@ -5,7 +5,7 @@ The following is based on a conversation with ChatGPT, so the information may no
   - [What is programming?](#what-is-programming)
   - [What is a computer?](#what-is-a-computer)
   - [How does a programming language become 0s and 1s?](#how-does-a-programming-language-become-0s-and-1s)
-  - [How do 0s and 1s become things we see on a computer screen?](#how-does-0s-and-1s-become-things-we-see-on-a-computer-screen)
+  - [How do 0s and 1s become things we see on a computer screen?](#how-do-0s-and-1s-become-things-we-see-on-a-computer-screen)
   - [What are these 0s and 1s?](#what-are-these-0s-and-1s)
   - [If text editors and IDEs are like programs that make programs, how were the very first ones developed?](#if-text-editors-and-ides-are-like-programs-that-make-programs-how-were-the-very-first-ones-developed)
   - [Prior to IDEs, how did people enter code into a computer?](#prior-to-ides-how-did-people-enter-code-into-a-computer)
